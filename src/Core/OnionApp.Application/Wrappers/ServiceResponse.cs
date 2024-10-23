@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace OnionApp.Application.Wrappers
 {
-    public class BaseResponse
+    public class ServiceResponse<T> : BaseResponse
     {
-        public Guid Id { get; set; }
-        public string Message { get; set; }
-        public bool IsSuccess { get; set; }= true;
+        public T Value { get; set; }
 
+        public ServiceResponse(T value)
+        {
+            Value = value;
+        }
     }
 }
