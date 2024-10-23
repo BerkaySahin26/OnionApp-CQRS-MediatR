@@ -9,6 +9,6 @@ namespace OnionApp.Application.Dtos
     public class CarViewDto
     {
         public Guid Id { get; set; }
-        public string Name { get; set; }
+        public String Name { get; set; }
     }
 }

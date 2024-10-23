@@ -9,10 +9,10 @@ namespace OnionApp.Domain.Entities
 {
     public class Car: BaseEntity
     {
-        public string Name { get; set; }
-
-        public string Description { get; set; } 
+        public String Name { get; set; }
 
         public int Quentity { get; set; }
+
+        public decimal Value { get; set; }
     }
 }

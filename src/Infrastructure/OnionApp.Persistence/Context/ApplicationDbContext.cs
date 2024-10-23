@@ -22,9 +22,9 @@ namespace OnionApp.Persistence.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Car>().HasData(
-                new Car() { Id = Guid.NewGuid(), Name = "Bmw", Quentity = 100, Description = "M4 Kırmızı" },
-                new Car() { Id = Guid.NewGuid(), Name = "Mercedes", Quentity = 100, Description = "C4 Gri" },
-                new Car() { Id = Guid.NewGuid(), Name = "Audi", Quentity = 500, Description = "A6 Siyah" }
+                new Car() { Id = Guid.NewGuid(), Name = "Bmw", Quentity = 100,Value= 10},
+                new Car() { Id = Guid.NewGuid(), Name = "Mercedes", Quentity = 100, Value = 1 },
+                new Car() { Id = Guid.NewGuid(), Name = "Audi", Quentity = 500, Value = 25 }
                 );
 
             base.OnModelCreating(modelBuilder);
